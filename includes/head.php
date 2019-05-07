@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+
     <link rel="stylesheet" href="<?php echo (($css != "")? $css :"css/main.css")  ?>">
 
     <!-- Latest compiled and minified CSS -->
@@ -23,6 +24,9 @@
 
 </head>
 
+<?php
+session_start();
 
+?>
 
 <body>

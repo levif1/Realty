@@ -2,7 +2,10 @@
     --input-padding-x: 1.5rem;
     --input-padding-y: 0.75rem;
   }
-  
+  body{
+    padding-top: 56px !important;
+  }
+
   .login,
   .image {
     min-height: 100vh;

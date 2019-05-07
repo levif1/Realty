@@ -3,6 +3,25 @@ $css = "login.css";
 
 include("../includes/head.php");
 include("../includes/nav.php");
+include("../db/config.php");
+
+
+if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
+  if($_SESSION["priority"] == "renter"){
+    header("location: renterWelcome.php");
+  } else if ($_SESSION["priorty"] == "admin"){
+    header("location: admin/adminWelcome.php");
+  }
+
+
+
+
+
+
+  
+
+}
+
 ?>
 
 <!--===============================================================================================-->
@@ -29,7 +48,7 @@ include("../includes/nav.php");
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
+              <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="form-label-group">
                   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                   <label for="inputEmail">Email address</label>
