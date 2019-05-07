@@ -7,7 +7,7 @@
  define('DB_HOST', 'localhost');
  define('DB_USER', 'root');
  define('DB_PWD', 'root');
- define('BASEURL', $_SERVER['DOCUMENT_ROOT'] . '/Ecom/');
+ define('BASEURL', $_SERVER['DOCUMENT_ROOT'] . '/Realty/');
 
 /* Define the PDO connection string.
  */
