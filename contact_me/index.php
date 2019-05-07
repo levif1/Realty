@@ -153,4 +153,10 @@ if(isset($_POST) && !empty($_POST)){
 	</script>
 
 </body>
+
+<?php
+include("../includes/footer.php");
+
+?>
+
 </html>
