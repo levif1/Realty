@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     
@@ -7,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="<?php echo "/"  . "Realty/index.php" ?>">Home
                 <span class="sr-only">(current)</span>
               </a>
         </li>
@@ -15,10 +17,10 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="<?php echo "/"  . "Realty/login/login.php" ?>">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="<?php echo "/"  . "Realty/contact_me/index.php" ?>">Contact</a>
         </li>
       </ul>
     </div>

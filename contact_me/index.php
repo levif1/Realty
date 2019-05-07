@@ -1,6 +1,7 @@
 <?php
 
 include("../includes/head.php");
+include("../includes/nav.php");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
