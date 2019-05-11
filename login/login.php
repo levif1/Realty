@@ -12,15 +12,8 @@ if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
   } else if ($_SESSION["priorty"] == "admin"){
     header("location: admin/adminWelcome.php");
   }
-
-
-
-
-
-
-  
-
 }
+
 
 ?>
 
@@ -39,7 +32,7 @@ if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
 	<link rel="stylesheet" type="text/css" href="../contact_me/css/main.css">
 <!--===============================================================================================-->
 
-<<div class="container-fluid">
+<div class="container-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
     <div class="col-md-8 col-lg-6">
