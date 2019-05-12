@@ -1,9 +1,8 @@
 <?php
 $css = "login.css";
 
-include("../includes/head.php");
-include("../includes/nav.php");
-include("../db/config.php");
+require_once("../includes/head.php");
+require_once("../includes/nav.php");
 
 
 if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
@@ -13,6 +12,9 @@ if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
     header("location: admin/adminWelcome.php");
   }
 }
+
+
+
 
 
 ?>
@@ -41,14 +43,15 @@ if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+              <form action = "login.inc.php" method="POST">
                 <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                   <label for="inputEmail">Email address</label>
                 </div>
 
                 <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
                   <label for="inputPassword">Password</label>
                 </div>
 
@@ -58,18 +61,32 @@ if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true  ){
                 </div>
 
                 <div class="container-contact100-form-btn">
-                  <button class="contact100-form-btn">
+                  <button class="contact100-form-btn" type="submit" name="login-submit">
                     <span>
                       Sign in
                       <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
+              </form>
+
+
+              <form action="logout.inc.php" method="POST">
+                  <div class="container-contact100-form-btn" >
+                    <button class="contact100-form-btn" type="submit" name="logout-submit">
+                      <span>
+                        Logout
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+              </form>
+
 
                 <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
+                  <a class="small" href="#">Forgot password?</a>
+                </div>
 
-              </form>
             </div>
           </div>
         </div>

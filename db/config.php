@@ -7,7 +7,7 @@
  define('DB_HOST', 'localhost');
  define('DB_USER', 'root');
  define('DB_PWD', '');
- define('BASEURL', 'localhost/Realty/');
+ define('BASEURL', '/Realty/');
 
 /* Define the PDO connection string.
  */
@@ -15,11 +15,10 @@
  'mysql:host=' . DB_HOST .
  ';dbname=' . DB_NAME);
 
-try{
- $pdo = new PDO(MYSQL_CONNECTION_STRING, DB_USER,DB_PWD);
-} catch (PDOException $e){
-    die();
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_NAME);
+
+if(!$conn){
+    die("Connection failed: " .mysqli_connect_error());
 }
 
-    
 ?> 
