@@ -23,16 +23,16 @@ if (isset($_POST["login-submit"])){
             $results = mysqli_stmt_get_result($stmt);
             if( $row = mysqli_fetch_assoc($results) ){
                 $pwdCheck = password_verify($password, $row["password"]);
-                $priority = $row["priority"];
+               
                 if($pwdCheck == false){
                     header("Location: login.php?error=wrongpassword");
                     exit();
                 } else if($pwdCheck == true){
+                    $priority = $row["priority"];
                     $_SESSION["priority"] = $priority;
-                    $_SESSION["userId"] = $row["id"];
+                    $_SESSION["userId"] = $row["user_id"];
                     $_SESSION["loggedIn"] = "true";
-
-                    if($priorty == "admin"){
+                    if($priority == "admin"){
                         header("Location: ../admin/adminWelcome.php");
                         exit();
                     } else {
