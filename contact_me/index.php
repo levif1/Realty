@@ -6,7 +6,7 @@ include("../includes/nav.php");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'D:\CS_Languages\Composer\vendor\autoload.php';
+require '../vendor/autoload.php';
 
 if(isset($_POST) && !empty($_POST)){
 	$mail = new PHPMailer(TRUE);
