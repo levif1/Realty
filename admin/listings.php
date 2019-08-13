@@ -13,6 +13,10 @@ $results = $conn->query($sql);
 
 $address = $price = $status = $leaseEnd = "";
 
+$imageArr = [];
+
+
+
 ?>
  <link rel="stylesheet" href="./header/listingCss.css">
 
@@ -73,27 +77,53 @@ $address = $price = $status = $leaseEnd = "";
       <div class="modal-body">
           <div class="container-fluid">
 
-                <div class="float-left">
-                    <img />
+          <div id="carouselExampleIndicators" class="carousel slide cont" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="d-block w-100" src="picts/chicago.jpg" alt="First slide" class = "caro">
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="d-block w-100" src="la.jpg" alt="Second slide" class = "caro">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="d-block w-100" src="ny.jpg" alt="Third slide" class = "caro">
+                    </div>
+                </div>
+            </div>
                 
                 <div class="form-inline col-md-4 center">
-                    <label class="formInputSmall center" for="">Address</label>
+                    <label class="center" for="">Address</label>
                     <input type="text" name="" id="" value="" class="form-control">
                 </div>
 
-                <div class="form-group col-md-2 center">
-                    <label for="" class="center">Price</label>
-                    <input type="number" name="" id="" min="0" value="" class="form-control formInputSmall center">
-                </div>
+                <div class="col-md-3 center">
+                    <label class="center" for="price">Price</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        </div>
+                        <input type="text" class="form-control" id="price" placeholder="">
+                    </div>
+                </div>    
 
-                <div class="form-group col-md-2 center">
+
+                <div class="form-group col-md-3 center">
                     <label for="" class="center">Bedrooms</label>
-                    <input type="number" name="" id="" min="1" max="20" value="" class="form-control formInputSmall center">
+                    <input type="number" name="" id="" min="1" max="20" value="" class="form-control center">
                 </div>
-                <div class="form-group col-md-2 center">
+                <div class="form-group col-md-3 center">
                     <label for="" class="center">Bathrooms</label>
-                    <input type="number" name="" id="" min="1" max="20" value="" class="form-control formInputSmall center">
+                    <input type="number" name="" id="" min="1" max="20" value="" class="form-control center">
                 </div>
 
         </div>
