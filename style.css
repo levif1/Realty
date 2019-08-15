@@ -1,0 +1,463 @@
+body {
+    padding-bottom: 0px;
+}
+
+/*Navigation Bar*/
+.color1 {
+  background-color: #2D374A;
+}
+
+.color2 {
+  color: #fff;
+}
+
+.active {
+  color: lightgrey!important;
+}
+
+.navbar {
+  background-color: rgba(45, 55, 74, 0.7);
+  position: absolute;
+  margin: 30px;
+  right: 0;
+  left: 0;
+  padding: 0;
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, .5);
+}
+
+.center {
+  padding: 0;
+}
+
+.navbar-brand{
+  font-size: 2em;
+  padding: 0px;
+  max-width: 50px;
+  position: relative;
+  margin: 15px;
+}
+
+.nav-link:hover {
+  color: #AEE1FE;
+}
+
+.navbar-collapse a {
+  color: #fff;
+}
+
+.nav-item {
+  color: #fff;
+  padding: 0px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.nav-link {
+  color: #fff;
+  display: inline-block;
+  padding-left: 12px!important;
+  padding-right: 12px!important;
+}
+
+.navbar-toggler {
+    border-color: rgb(255,255,255,1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Banner*/
+.bannerShadow {
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, .5);
+  z-index: 5;
+  position: relative;
+}
+
+.customBanner {
+  background-color: #89909E;
+  position: relative;
+  margin-top: -20px;
+  width: auto;
+  height: 40px;
+}
+
+/*Jumbotron*/
+
+.padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #2D374A;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+.fa-5x {
+  color: #fff;
+  text-shadow: 3px 6px 3px #000;
+}
+
+.bannerFont {
+  color: #fff;
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, .5);
+  position: relative;
+  z-index: 3;
+}
+
+/*Info Section*/
+.backgroundImage {
+  background-image: url(resources/scatterHouse.png),url(resources/scatterHouse.png);
+  background-repeat: repeat;
+  background-size: 500px;
+}
+
+.overallPadding {
+  position: relative;
+  width: 70%;
+  background-color: #AFB4BD;
+  z-index: 1;
+  margin: 0 auto;
+  right: 0px;
+  left: 0px;
+  padding: 0;
+}
+
+.infoPadding {
+  max-width: 90%;
+  right: auto;
+  left: auto;
+  margin: 0 auto;
+  padding: 0!important;
+  margin-bottom: -6px;
+}
+
+.img-fluid {
+
+}
+
+.imageBorder {
+  border: #707070 solid 6px;
+}
+
+.contentPadding {
+
+}
+
+.customImage1 {
+  display: inline-block;
+  max-width: 550px;
+  max-height: 460px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-top: -6px;
+}
+
+.titlePadding {
+  background-color: #C3CBD9;
+  border: #707070 solid 6px;
+  display: inline-block;
+  max-width: 550px;
+  max-height: 463px;
+  margin: 0 auto;
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+
+#titleBlock {
+  background-color: #fff;
+  border: #707070 solid 6px;
+  max-width: 375px;
+  margin-top: 40px;
+  padding: 8px;
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#logo {
+  max-width: 50%;
+  width: auto;
+  margin: 0 auto;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+.textPadding {
+  background-color: #fff;
+  border: #707070 solid 6px;
+  display: inline-block;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hPadding {
+  padding: 20px;
+  text-align: left;
+  padding-top: 35px;
+}
+
+.pPadding {
+  padding: 20px;
+  text-align: left;
+}
+
+.customImage2 {
+  display: flex;
+  max-width: 550px;
+  max-height: 365px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/*SPACER*/
+
+.spacer {
+  max-width: 85%;
+  position: relative;
+  z-index: 4;
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, .5), 3px -2px 4px rgba(0, 0, 0, .5);
+}
+
+.customBanner2 {
+  min-height: 120px;
+}
+
+/*Contact*/
+.contain {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #AFB4BD;
+  z-index: 1;
+  padding-bottom: 80px;
+}
+
+#contactUs {
+  margin: 0 auto !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.marginControl {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titleContact {
+  right: 0;
+  font-family: Georgia, serif;
+  color: #fff;
+}
+
+.contactTitle {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.titleContact {
+  font-size: 3em;
+}
+
+.textInput {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.paddingText {
+
+}
+
+.contactGrid {
+  border: solid black 1px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  min-height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 2px 1px
+}
+
+.span {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-height: 150px;
+}
+
+.gridSpacing {
+
+}
+
+.textBox {
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+
+}
+
+.gridSpacing {
+  border-radius: 20px;
+}
+
+.messageArea {
+  width: 100%;
+}
+
+.span2 {
+  margin-bottom: 10px;
+  min-height: 170px;
+  background-color: #fff;
+  padding: 0;
+}
+
+
+.btn {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 30px;
+  max-width: 150px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0 auto;
+}
+
+/*Connect Banner*/
+.connectBanner {
+  background-image: url(resources/connectBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opacityConnect {
+  background-color: rgba(10,10,10,0.3);
+}
+
+.containConnect {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin:0px;
+  vertical-align: center;
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, .5);
+}
+
+.facebookIcon {
+  margin: 0 auto;
+  font-size: 3em;
+  color: #4267b2;
+}
+
+.twitterIcon {
+  margin: 0 auto;
+  font-size: 3em;
+  color: #38A1F3;
+}
+
+.instagramIcon {
+  margin: 0 auto;
+  font-size: 3em;
+  color: #fff;
+}
+
+/*Footer*/
+.footerContainer {
+    background-color: #2D374A;
+    padding-bottom: 30px;
+}
+
+.footerSpacing {
+  padding: 30px;
+  margin: 0 auto!important;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.footerText {
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+
+.break {
+  color: #fff!important;
+}
+
+
+
+
+
+
+
+/*Banner Image*/
+
+.imageBanner {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/*Filter Banner*/
+.vertAlign {
+  vertical-align: middle;
+}
+
+.vertAlignButton {
+  vertical-align: middle;
+  margin: 10px;
+}
+
+/*Listing*/
+.containListing {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 70%;
+}
+
+.Listing {
+  background-color: lightgrey;
+  padding-right: 15px;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+#adjustMargin {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.displayImage {
+  margin: 8px;
+  height: auto;
+  width: auto;
+}
+
+.listingContents {
+  margin: 0!important;
+  vertical-align: middle;
+}
+
+.alignVertical {
+  display: table;
+}
+
+.listingText {
+  margin: 0!important;
+  padding: 0;
+}
+
+.textListing {
+  font-size: 1em;
+}
