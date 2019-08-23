@@ -11,12 +11,18 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="/Realty/">Home</a>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Listings</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
+              <div class="dropdown-menu" aira-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/Realty/listing/listing.php">Housing</a>
+                <a class="dropdown-item" href="/Realty/storageListing/storageListing.php">Storage Units</a>
+              </div>
           <li class="nav-item">
             <a class="nav-link" href="/Realty/register/register.php">Apply</a>
           <li class="nav-item">
-            <a class="nav-link" href="/Realty/#contactUs">Contact Us</a>
+            <a class="nav-link" href="/Realty/index.php#contactUs">Contact Us</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/Realty/login/login.php">Sign In</a>
     </div>
   </div>
 </nav>
